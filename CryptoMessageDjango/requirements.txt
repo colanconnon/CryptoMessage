@@ -1,0 +1,8 @@
+astroid==1.3.4
+Django==1.7.6
+djangorestframework==3.1.0
+logilab-common==0.63.2
+mysql-connector-python==2.0.3
+mysqlclient==1.3.6
+pylint==1.4.1
+six==1.9.0

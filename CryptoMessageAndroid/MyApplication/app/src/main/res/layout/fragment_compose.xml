@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.colanconnon.cryptomessage.Fragments.ComposeFragment">
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10sp"
+        android:hint="Enter usernames, seperate by commas for multi."
+        android:singleLine="true"
+        android:textColorHint="#777"
+        android:textColor="@color/black"
+        android:id="@+id/composeUsernameTxt"
+
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:id="@+id/composeBottomLayout"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:id="@+id/composeMessageTxt"
+            android:background="@color/white"
+            android:hint="Enter text here"
+            android:textColor="@color/black"
+            android:padding="10sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="send"
+
+
+            android:layout_marginLeft="4sp"
+            android:id="@+id/composeSendButton"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="10sp"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

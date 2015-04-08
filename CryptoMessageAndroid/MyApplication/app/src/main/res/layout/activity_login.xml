@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:context="com.colanconnon.cryptomessage.Activities.LoginActivity">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CryptoMessage"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:id="@+id/loginTitle"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginUsernameTxtView"
+        android:layout_below="@+id/loginTitle"
+        android:text="Enter Username"
+        android:textColor="@color/white"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="30sp"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginUsernameTxtView"
+        android:background="@color/white"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10sp"
+        android:padding="15sp"
+        android:hint="Enter username"
+        android:singleLine="true"
+        android:id="@+id/loginUsernameEditTxt"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:id="@+id/loginPasswordTxtView"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginUsernameEditTxt"
+        android:text="Enter Password"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:textSize="20sp"
+
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginPasswordTxtView"
+        android:inputType="textPassword"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10sp"
+        android:padding="15sp"
+        android:hint="Enter Password"
+        android:id="@+id/loginPasswordEditTxt"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="30sp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:id="@+id/loginLoginBtn"
+        android:layout_below="@id/loginPasswordEditTxt"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginRegisterBtn"
+        android:layout_below="@+id/loginLoginBtn"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="20sp"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:background="@color/white"
+
+        />
+
+
+
+</RelativeLayout>
